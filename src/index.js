@@ -1208,11 +1208,10 @@ function filterData() {
   DATA.filtered = DATA.rawdata.features.filter(function(d) {
     if (pci == 'pci-off') {
       return statuses.indexOf(d.properties.status) > -1 && types.indexOf(d.properties.type) > -1;
-    } 
-    else if (pci == 'pci-on-5'){
+    } else if (pci == 'pci-on-5'){
       // also filter by pci5 = 'yes'
       return statuses.indexOf(d.properties.status) > -1 && types.indexOf(d.properties.type) > -1 && d.properties.pci5 == 'yes';
-    } else {
+    } else if (pci == 'pci-on-6'){
       // also filter by pci5 = 'yes'
       return statuses.indexOf(d.properties.status) > -1 && types.indexOf(d.properties.type) > -1 && d.properties.pci6 == 'yes';
     }
