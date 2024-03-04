@@ -154,7 +154,6 @@ CONFIG.fossil_types = {
   // lines
   'gas_pipeline': {text: 'Methane Gas Pipeline', shape: 'line', order: 4},
   'hydrogen_pipeline': {text: 'Hydrogen Pipeline', shape: 'line', order: 5},
-  'lng_shipping_routes': {text: 'LNG Shipping Routes', shape: 'dashed-line', dash: '3 7', order: 6},
 }
 
 // false until the app is fully loaded
